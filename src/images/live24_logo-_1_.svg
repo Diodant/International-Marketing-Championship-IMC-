@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+        xmlns:dc="http://purl.org/dc/elements/1.1/"
+        xmlns:cc="http://creativecommons.org/ns#"
+        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns:svg="http://www.w3.org/2000/svg"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 793.70135 1122.52"
+        height="1122.52"
+        width="793.70135"
+        xml:space="preserve"
+        id="svg2"
+        version="1.1"><metadata
+     id="metadata8"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+        rdf:resource="http://purl.org/dc/dcmitype/StillImage"/></cc:Work></rdf:RDF></metadata>
+    <defs
+            id="defs6"><clipPath
+       id="clipPath40"
+       clipPathUnits="userSpaceOnUse"><path
+         id="path38"
+         d="M 0,841.89 H 595.276 V 0 H 0 Z" /></clipPath></defs>
+    <g
+            transform="matrix(1.3333333,0,0,-1.3333333,0,1122.52)"
+            id="g10"><path
+       id="path12"
+       style="fill:#686460;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       d="M 103.579,609.246 H 491.696 V 779.068 H 103.579 Z" />
+        <path
+                id="path14"
+                style="fill:#777;fill-opacity:1;fill-rule:evenodd;stroke:none"
+                d="M 491.696,208.411 H 105.307 v 386.39 h 386.389 z"/>
+        <g
+                transform="translate(181.9829,669.4259)"
+                id="g16"><path
+         id="path18"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="M 0,0 H 44.898 V -22.601 H -25.865 V 74.59 H 0 Z" /></g>
+        <path
+                id="path20"
+                style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                d="m 263.661,646.825 h -25.865 v 97.191 h 25.865 z"/>
+        <g
+                transform="translate(317.8271,678.7633)"
+                id="g22"><path
+         id="path24"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="M 0,0 21.642,65.253 H 48.116 L 14.758,-31.938 h -29.514 l -33.36,97.191 h 26.476 z" /></g>
+        <g
+                transform="translate(440.2939,646.8253)"
+                id="g26"><path
+         id="path28"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="M 0,0 H -69.208 V 97.191 H 0 V 76.88 H -45.688 V 59.009 H -7.673 V 39.134 H -45.688 V 20.31 H 0 Z" /></g>
+        <g
+                transform="translate(346.2354,392.2208)"
+                id="g30"><path
+         id="path32"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 0,0 h 46.346 v 56.123 z m 46.008,-83.717 v 43.055 H -49.408 V 2.946 L 40.335,108.629 H 89.771 V 0 h 22.772 V -40.662 H 89.771 v -43.055 z" /></g>
+        <g
+                id="g34"><g
+         clip-path="url(#clipPath40)"
+         id="g36"><g
+           transform="translate(145.0288,329.5294)"
+           id="g42"><path
+             id="path44"
+             style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 0,0 c 0,72.002 85.152,84.819 85.152,112.913 0,13.635 -10.91,19.362 -21.001,19.362 -12.546,0 -23.182,-9.817 -28.909,-20.727 l -35.455,23.728 c 11.453,22.092 33.546,42.001 68.729,42.001 31.909,0 66.546,-18.273 66.546,-59.729 0,-60.819 -79.698,-72.545 -82.152,-97.637 h 91.294 V -22.755 H 2.182 C 0.818,-15.118 0,-6.544 0,0" /></g></g></g>
+        <text
+                id="text52"
+                style="fill:#FFF;font-variant:normal;font-weight:600;font-stretch:normal;font-size:43.38579941px;font-family:'Museo Sans Cyrl 700';-inkscape-font-specification:MuseoSansCyrl-700;writing-mode:lr-tb;fill:#686460;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                transform="matrix(1,0,0,-1,103.5791,159.5273)"><tspan
+         id="tspan46"
+         y="0"
+         x="0 25.944708 53.451305 76.749481 100.5249 126.8167 153.10849 176.88391 199.78728 227.29387">Российское</tspan>
+            <tspan
+                    id="tspan48"
+                    y="52.062962"
+                    x="0 32.409191 58.787758 91.283722 118.79032 145.4292 177.66486 200.91965 227.99239 254.28418 281.79077 308.16934 334.54791 362.0545">Информационное</tspan>
+            <tspan
+                    id="tspan50"
+                    y="104.12592"
+                    x="0 28.200769 45.902176 70.241608 96.620178 117.74906 141.52448 163.21738 186.55894">Агентство</tspan></text>
+</g></svg>
