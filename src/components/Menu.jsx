@@ -1,7 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; 
 import logo from '../images/logo.svg';
-import menuIcon from '../images/menu.svg';
-import closeIcon from '../images/close.svg';
 
 function Menu() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -11,42 +10,69 @@ function Menu() {
   };
 
   return (
-    <header className={`header__sticky ${isMenuOpen ? 'menu-open' : ''}`} data-fixed-menu="">
+    <header
+      className={`header__sticky ${isMenuOpen ? 'menu-open' : ''}`}
+      data-fixed-menu=""
+    >
       <div className="page__wrapper">
         <div className="header" data-fixed-menu="">
-          <a className="header__logo-wrap" href="/awards/">
-            <img src={logo} alt="Workspace Digital Awards" className="header__logo" />
-          </a>
+          <Link className="header__logo-wrap" to="/awards/">
+            {/* Replace <a> with <Link> and href with to */}
+            <img
+              src={logo}
+              alt="Workspace Digital Awards"
+              className="header__logo"
+            />
+          </Link>
 
-          <div className={`header__dropdown ${isMenuOpen ? 'active' : ''}`} data-mob-menu-container="">
+          <div
+            className={`header__dropdown ${isMenuOpen ? 'active' : ''}`}
+            data-mob-menu-container=""
+          >
             <nav className="header__nav mr-auto">
               <ul className="header-nav">
                 <li className="header-nav__item nowrap">
-                  <a href="/awards/about/" className="link header-nav__item-link">О премии</a>
+                  <Link to="/" className="link header-nav__item-link">
+                    О премии
+                  </Link>
                 </li>
                 <li className="header-nav__item nowrap">
-                  <a href="/awards/rules/" className="link header-nav__item-link">Участникам</a>
+                  <Link to="/regulations" className="link header-nav__item-link">
+                    Положение
+                  </Link>
                 </li>
                 <li className="header-nav__item nowrap">
-                  <a href="/awards/cases/" className="link header-nav__item-link">Кейсы</a>
+                  <Link to="/winners" className="link header-nav__item-link">
+                  Победители 
+                  </Link>
                 </li>
                 <li className="header-nav__item nowrap">
-                  <a href="/awards/nominees/" className="link header-nav__item-link">Номинанты</a>
+                  <Link to="/jury" className="link header-nav__item-link">
+                    Жюри
+                  </Link>
                 </li>
                 <li className="header-nav__item nowrap">
-                  <a href="/awards/jury/" className="link header-nav__item-link">Жюри</a>
+                  <Link to="/gallery" className="link header-nav__item-link">
+                  Фотогалерея
+                  </Link>
                 </li>
                 <li className="header-nav__item nowrap">
-                  <a href="/awards/news/" className="link header-nav__item-link">Новости</a>
+                  <Link to="/articles" className="link header-nav__item-link">
+                    Новости
+                  </Link>
                 </li>
                 <li className="header-nav__item nowrap">
-                  <a href="/awards/contact/" className="link header-nav__item-link">Контакты</a>
+                  <Link to="/contacts" className="link header-nav__item-link">
+                    Контакты
+                  </Link>
                 </li>
               </ul>
             </nav>
-            <button className="button _yellow _outline header__participate-btn text-uppercase t-a-c" data-modal-popup-show-btn="auth">
+            <a
+              href="/contacts#cont"
+              className="button _yellow _outline header__participate-btn text-uppercase t-a-c">
               Принять участие
-            </button>
+            </a>
           </div>
         </div>
       </div>
