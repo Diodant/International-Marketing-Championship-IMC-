@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/International-Marketing-Championship-IMC-/static/css/main.3727a815.css",
-    "main.js": "/International-Marketing-Championship-IMC-/static/js/main.2e02557c.js",
+    "main.js": "/International-Marketing-Championship-IMC-/static/js/main.30e54d7a.js",
     "static/js/453.23263ec9.chunk.js": "/International-Marketing-Championship-IMC-/static/js/453.23263ec9.chunk.js",
     "static/media/photo_8.jpg": "/International-Marketing-Championship-IMC-/static/media/photo_8.e314f7d0c792718bcf09.jpg",
     "static/media/photo_4.jpg": "/International-Marketing-Championship-IMC-/static/media/photo_4.00814503da8d885839cd.jpg",
@@ -72,11 +72,11 @@
     "static/media/close_popup_white.svg": "/International-Marketing-Championship-IMC-/static/media/close_popup_white.8b08fb78e5b533b57e0d.svg",
     "static/media/plus.svg": "/International-Marketing-Championship-IMC-/static/media/plus.cc09c064d9002f6a0598.svg",
     "main.3727a815.css.map": "/International-Marketing-Championship-IMC-/static/css/main.3727a815.css.map",
-    "main.2e02557c.js.map": "/International-Marketing-Championship-IMC-/static/js/main.2e02557c.js.map",
+    "main.30e54d7a.js.map": "/International-Marketing-Championship-IMC-/static/js/main.30e54d7a.js.map",
     "453.23263ec9.chunk.js.map": "/International-Marketing-Championship-IMC-/static/js/453.23263ec9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3727a815.css",
-    "static/js/main.2e02557c.js"
+    "static/js/main.30e54d7a.js"
   ]
 }
