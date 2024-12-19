@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Wda_sprite from '../images/wda-sprite.svg';
 import jury_1_2024 from '../images/2315.png'
 import jury_2_2024 from '../images/12.png'
@@ -9,7 +9,7 @@ import jury_2_2023 from '../images/41241.jpg'
 import jury_3_2023 from '../images/Vova_B..png'
 import jury_4_2023 from '../images/534.jpg'
 import jury_1_2022 from '../images/terekhov_300.png'
-import jury_2_2022 from '../images/Lyapueva.png'
+import jury_2_2022 from '../images/87553.jpeg'
 import jury_3_2022 from '../images/Foto-Anton.jpg'
 import jury_4_2022 from '../images/Nina-Kalaus.jpg'
 import jury_1_2021 from '../images/zaporozsky_1.png'
@@ -63,15 +63,15 @@ const juryMembers = [
     imgSrc: jury_1_2023 ,
     alt: 'Партизпанян Айк',
     company: 'Армения',
-    position: 'Директор по маркетингу Publicis Armenia',
+    position: 'Директор по маркетингу Publicis Armenia. Известен своими успешными проектами в области цифрового маркетинга и созданием креативных рекламных кампаний для крупных международных брендов.',
     year: '2023'
   },
   {
-    name: 'Алексеева Анна',
-    imgSrc: jury_2_2023 ,
-    alt: 'Алексеева Анна',
+    name: 'Елена Гласенко',
+    imgSrc: jury_2_2022 ,
+    alt: 'Елена Гласенко',
     company: 'Украина',
-    position: 'Директор по маркетингу.',
+    position: 'Директор по маркетингу ТОВ "ОПТІМУМ МЕДІА УКРАЇНА". Специализируется на внедрении инновационных решений для бизнеса.',
     year: '2023'
   },
   {
@@ -83,11 +83,11 @@ const juryMembers = [
     year: '2023'
   },
   {
-    name: 'Игорь Луковский',
-    imgSrc: jury_4_2023 ,
-    alt: 'Игорь Луковский',
-    company: 'Беларусь',
-    position: 'Директор по маркетингу.',
+    name: 'Баглан Оспанов',
+    imgSrc: jury_3_2022 ,
+    alt: 'Баглан Оспанов',
+    company: 'Казахстан',
+    position: 'Специалист по digital-технологиям и управлению онлайн-продажами. Работал с ведущими e-commerce компаниями в Центральной Азии.',
     year: '2023'
   },
   {
@@ -99,19 +99,19 @@ const juryMembers = [
     year: '2022'
   },
   {
-    name: 'Ольга Ткаченко',
-    imgSrc: jury_2_2022 ,
-    alt: 'Ольга Ткаченко',
+    name: 'Анна Алексеева',
+    imgSrc: jury_2_2023 ,
+    alt: 'Анна Алексеева',
     company: 'Украина',
-    position: 'Эксперт по PR и управлению корпоративной репутацией. Работала с крупными корпорациями в СНГ и Западной Европе.',
+    position: 'Директор по маркетингу ООО «DEMIS GROUP». Известна своими успешными кампаниями по продвижению брендов на рынках Восточной Европы, включая разработку инновационных digital-стратегий.',
     year: '2022'
   },
   {
-    name: 'Баглан Оспанов',
-    imgSrc: jury_3_2022 ,
-    alt: 'Баглан Оспанов',
-    company: 'Казахстан',
-    position: 'Специалист по digital-технологиям и управлению онлайн-продажами. Работал с ведущими e-commerce компаниями в Центральной Азии.',
+    name: 'Игорь Луковский',
+    imgSrc: jury_4_2023 ,
+    alt: 'Игорь Луковский',
+    company: 'Беларусь',
+    position: 'Директор по маркетингу ООО "Mega Research". Известен своими инновационными подходами в анализе данных и разработке стратегий продвижения продуктов на международных рынках.',
     year: '2022'
   },
   {
@@ -221,6 +221,44 @@ const juryMembers = [
 ];
 
 const JuryPage = () => {
+
+  useEffect(() => {
+    const translateNames = {
+      'Анна Алексеева': 'Hanna Alieksieieva',
+      'Игорь Луковский': 'Ihar Lukouski',
+      'Елена Гласенко': 'Olena Glasenko',
+    };
+  
+    const replaceName = () => {
+      const elements = document.querySelectorAll('[data-translate-custom="true"]');
+      elements.forEach((el) => {
+        const currentText = el.textContent.trim();
+        if (document.documentElement.lang !== 'ru' && translateNames[currentText]) {
+          el.textContent = translateNames[currentText];
+        }
+      });
+    };
+  
+
+    replaceName();
+  
+
+    const observer = new MutationObserver(() => {
+      replaceName();
+    });
+  
+    observer.observe(document.body, { childList: true, subtree: true });
+  
+    const intervalId = setInterval(() => {
+      replaceName();
+    }, 500); 
+  
+    return () => {
+      observer.disconnect(); 
+      clearInterval(intervalId); 
+    };
+  }, []);
+
   return (
     <>
     <section className="section page__wrapper">
@@ -289,8 +327,15 @@ const JuryPage = () => {
                     className="jury__item-img"
                   />
                 </div>
-                <h3 className="jury__item-title">{member.name}</h3>
               </a>
+              <h3
+                className="jury__item-title"
+                data-translate-custom={
+                  ['Анна Алексеева', 'Игорь Луковский', 'Елена Гласенко'].includes(member.name) ? "true" : "false"
+                }
+              >
+                {member.name}
+              </h3>
               <p className="jury__item-company">{member.company}</p>
               <p className="jury__item-position">{member.position}</p>
               <p className="cases__item-custom">{member.year}</p>
