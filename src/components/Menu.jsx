@@ -33,7 +33,7 @@ function Menu() {
               <ul className="header-nav">
                 <li className="header-nav__item nowrap">
                   <Link to="/" className="link header-nav__item-link">
-                    О премии
+                  О КОНКУРСЕ
                   </Link>
                 </li>
                 <li className="header-nav__item nowrap">

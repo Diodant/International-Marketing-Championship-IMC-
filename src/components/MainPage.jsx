@@ -134,7 +134,7 @@ function MainPage() {
       </section>
 
       <section className="section page__wrapper emerge" data-expose="true" data-effect="slide" data-duration="500" data-up="20rem" data-initialized="1" data-style-1="transform: translate(0,20rem);transform-origin: undefined;" data-style-2="transform: translate(0,0); transition: opacity 500ms ease-out, transform 500ms cubic-bezier(0, 0.9, 0.1, 1);" style={{ opacity: 1, transform: 'translate(0,0)', transition: 'opacity 500ms ease-out, transform 500ms cubic-bezier(0, 0.9, 0.1, 1)' }}>
-      <h1 className="section__title _h1 mb-auto mt-auto">О премии</h1>
+      <h1 className="section__title _h1 mb-auto mt-auto">О КОНКУРСЕ</h1>
       <hr />
       <p className="section__subtitle mb-20">International Marketing Championship – это международный конкурс, который ежегодно объединяет самых талантливых и креативных маркетологов со всего мира. С 2019 года конкурс проводится в период с 15 по 30 января и стал одной из главных площадок для демонстрации передовых достижений в области маркетинга. Участие в International Marketing Championship – это уникальная возможность не только продемонстрировать свои навыки и идеи, но и заявить о себе на глобальном уровне.</p>
       <p className="section__subtitle mb-20">Конкурс отличается строгим отбором участников, которым необходимо подать заявку в период с 1 по 14 января. В течение двух недель жюри, состоящее из ведущих экспертов индустрии, оценивает проекты по множеству критериев, включая инновационность, креативность и практическую ценность. Победители объявляются 1 февраля и получают признание на международной арене, а также ценные призы и возможности для дальнейшего профессионального роста.</p>
