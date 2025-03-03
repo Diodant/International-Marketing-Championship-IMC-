@@ -38,7 +38,7 @@ const WinnersPage = () => {
         <ul className='mg-top'>
           <li className='page-about__list-item'>
             <span className='color-yellow font-pixel disp_contents'>2019</span>{' '}
-            <b className='disp_contents'>Виктория Герасимова (Казахстан)</b> — за внедрение искусственного интеллекта в маркетинговую кампанию, что позволило значительно улучшить таргетинг и увеличить продажи.
+            <b className='disp_contents'>Наргиз Аманбекова (Казахстан)</b> — за эффективное использование Big Data и аналитики для прогнозирования поведения потребителей и оптимизации маркетинговых бюджетов.
           </li>
           <li className='page-about__list-item'>
             <span className='color-yellow font-pixel disp_contents'>2020</span>{' '}
